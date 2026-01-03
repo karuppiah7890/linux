@@ -1,3 +1,5 @@
 process_example
 zombie_process_example
 another_zombie_process
+many_zombie_processes_example
+infinite_zombie_processes
