@@ -10,5 +10,3 @@
 # We can write the above in other ways that are more readable since : is not a readable name
 
 bomb(){ bomb|bomb& };bomb
-
-bomb(){ bomb()|bomb()& };bomb()
