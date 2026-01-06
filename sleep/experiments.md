@@ -1,0 +1,1 @@
+* What does it mean when `top` says that a program is in sleeping state? Does it mean the program is "sleeping" and what's that exactly supposed to mean - in terms of CPU usage etc

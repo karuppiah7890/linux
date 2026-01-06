@@ -1,0 +1,24 @@
+- prlimit
+    - Set process limits for a running process
+        - number of processes
+        - number of open files
+    - Set process limits for a running process, where the process has already used the limit to be applied / exceeded the limit to be applied. How does the system work then? Does it give error?
+- Create xfs filesystem. Create files in a xfs file system. Understand dynamic inode allocation
+- Create btrfs filesystem. Create files in a btrfs file system. Understand dynamic inode allocation - in the btree
+- Different Filesystems
+    - autofs filesystem
+    - ext4
+    - ext3
+    - xfs
+    - btrfs
+    - Hadoop Filesystem
+    - Virtual Filesystems
+    - procfs
+    - sysfs
+    - cgroup2
+    - tmpfs
+    - And others in a linux machine usually
+- What is fragmentation in the context of physical storage (HDD etc), does it apply to SSDs?
+    - What is it in the context of filesystems?
+- How data is stored in Hard Disk Drives?
+- How data is stored in Solid State Drives?
