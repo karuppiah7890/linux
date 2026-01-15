@@ -5,6 +5,12 @@
 * What is RES (Resident Set Size) and VIRT (Virtual Memory Size) and SHR (Shared Memory Size)?
 * How are we able to allocate 9GB+ RAM using malloc() in C, in a 4GB RAM machine?
 
+* How to understand the output of `pmap`?
+    - What are Address, Kbytes, RSS, Dirty, Mode, Mapping? This is shown in `pmap -x`
+    - What are Address, Perm, Offset, Device, Inode, Size, Rss, Pss, Referenced, Anonymous, LazyFree, ShmemPmdMapped, FilePmdMapped, Shared_Hugetlb, Private_Hugetlb, Swap, SwapPss, Locked, THPeligible, ProtectionKey, Mapping? This is shown in `pmap -X`
+    - What are Address, Perm, Offset, Device, Inode, Size, KernelPageSize, MMUPageSize, Rss, Pss, Shared_Clean, Shared_Dirty, Private_Clean, Private_Dirty, Referenced, Anonymous, LazyFree, AnonHugePages, ShmemPmdMapped, FilePmdMapped, Shared_Hugetlb, Private_Hugetlb, Swap, SwapPss, Locked, THPeligible, ProtectionKey, VmFlags, Mapping? This is shown in `pmap -XX`. A lot of it is in `pmap -X` itself. Extra seem to be - KernelPageSize, MMUPageSize, Shared_Clean, Shared_Dirty, Private_Clean, Private_Dirty, AnonHugePages, VmFlags
+    - How come "inode" concept comes up in the memory details? I thought it's a filesystem thing
+
 * What is Swap memory? Memory from files? Like, from disk? Like, from storage?
 
 * If memory is allocated in C program using malloc() but not freed using free() and later the process / program crashes or is killed in a normal way, does the Linux kernel take back the allocated RAM from the process? Or will it show as RAM still being used by the process? Ideally, RAM usage is all about what's happening when a program is running, right?

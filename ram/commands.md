@@ -13,3 +13,11 @@ gcc malloc_example.c -o malloc_example;
 
 gcc malloc_example.c -o malloc_example; ./malloc_example
 ```
+
+```bash
+ps u
+
+ps u | grep malloc
+
+while true; do ps u | grep malloc; sleep 1; done
+```
