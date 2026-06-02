@@ -1,0 +1,6 @@
+- How to observe the Linux Kernel threads? As a whole, in general
+    - How to observe the number of threads?
+    - How to observe the size of the stack of the threads?
+    - How to observe the state of the threads? complete / done, vs still running
+    - How to observe the CPU usage of the threads?
+    - How to observe the IO usage of the threads? Disk, Network etc
