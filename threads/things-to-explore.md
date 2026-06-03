@@ -13,3 +13,5 @@
         - `sudo sysctl -w kernel.threads-max=999999999`
         - `sysctl -w vm.max_map_count=1000000`
         - `sudo sysctl -w vm.max_map_count=2146999999`
+
+- How to use multiple cores? How to ensure that your program uses all the CPU cores?
