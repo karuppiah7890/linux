@@ -30,9 +30,9 @@ sudo apt install -y flex bison
 wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.1.167.tar.xz
 
 # uncompress the compressed file. For example -
-tar -xf linux-6.1.167.tar.xz
+tar -xvf linux-6.1.167.tar.xz
 
-# go inside the `perf` directory in the `tools` directory
+# go inside the `perf` directory, which is inside the `tools` directory
 cd linux-6.1.167/tools/perf
 
 # check if `nproc` works
@@ -40,10 +40,46 @@ nproc
 
 make -j$(nproc)
 
-sudo make install
-
 # check perf version
 ./perf version
+
+# For current user in current user's home directory
+make install
+# To install for root user in root user's home directory
+sudo make install
+
+# Check current user directory for current user installation
+ls ~/
+ls ~/bin
+ls ~/bin/perf
+ls ~/bin/trace
+ls ~/etc
+ls ~/etc/bash_completion.d/
+ls ~/etc/bash_completion.d/perf
+ls ~/include/
+ls ~/include/perf/ # and more inside
+ls ~/share/
+ls ~/share/perf-core/ # and more inside
+ls ~/libexec
+ls ~/libexec/perf-core/ # and more inside
+
+# Check root user directory for root user installation
+ls /root
+ls /root/bin
+ls /root/bin/perf
+ls /root/bin/trace
+ls /root/etc
+ls /root/etc/bash_completion.d/
+ls /root/etc/bash_completion.d/perf
+ls /root/include/
+ls /root/include/perf/ # and more inside
+ls /root/share/
+ls /root/share/perf-core/ # and more inside
+ls /root/libexec
+ls /root/libexec/perf-core/ # and more inside
+
+# For bash completions for current user
+source ~/etc/bash_completion.d/perf
 ```
 
 ---
